@@ -10,7 +10,7 @@ h1 {
   font-family: 'Sacramento', cursive;
   font-size: 7rem;
   color: #66BFBF;
-  font-weight:bolder;
+  font-weight: bolder;
 }
 
 h2 {
@@ -24,24 +24,11 @@ h2 {
 h3 {
   font-family: 'Montserrat', sans-serif;
   color: #11999E;
-    font-weight: bold;
-}
-
-a {
-  color:  #480032 ;
-  font-family: 'Montserrat', sans-serif;
-  padding: 10px 20px;
-  text-decoration: none;
   font-weight: bold;
 }
 
-a:hover {
-  color: #EAF6F6;
-
-}
-
 hr {
-  border: dotted 6px #EAF6F6;
+  border: dotted 6px #231e23;
   border-bottom: none;
   width: 4%;
   margin: 100px auto;
@@ -51,56 +38,35 @@ hr {
   line-height: 2;
 }
 
+/* Navgation bar */
+.navbar {
+  background-color: #EAF6F6;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #66BFBF;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 30px;
+}
+
+.nav-item:hover {
+  color: black;
+}
+
+
+/* Page 1 */
 .top-container {
   background-color: #EAF6F6;
   margin: 0;
   position: relative;
   padding-top: 250px;
 }
-.top-container h2{
 
-}
+/* Info Home section */
 .middle-container {
   padding: 100px 0;
-}
-
-.bottom-container {
-  background-color: #66BFBF;
-  padding: 50px 0 20px;
-}
-
-.skill-row {
-  width: 50%;
-  margin: 100px auto 100px auto;
-  text-align: left;
-  font-weight: bold;
-}
-
-.computer {
-  width: 25%;
-  border-radius: 100%;
-  float: left;
-  margin-right: 30px;
-}
-
-.poco {
-  border-radius: 100%;
-  width: 25%;
-  float: right;
-  margin-right: 30px;
-}
-
-.top-cloud {
-  position: absolute;
-  right: 300px;
-  top: 100px;
-width: 200px;
-}
-
-.middle-cloud {
-  position: absolute;
-  left: 250px;
-  bottom: 300px;
 }
 
 .intro {
@@ -110,6 +76,45 @@ width: 200px;
   font-size: 20px;
 }
 
+/* SKills row */
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Skill 1 */
+.computer {
+  width: 25%;
+  border-radius: 100%;
+  float: left;
+  margin-right: 30px;
+}
+
+/* SKill 2 */
+.languages {
+  border-radius: 100%;
+  width: 25%;
+  float: right;
+  margin-right: 30px;
+}
+
+/* clouds */
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 100px;
+  width: 200px;
+}
+
+.middle-cloud {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+
+/* CONTACT ME */
 .contact-message {
   width: 40%;
   margin: 40px auto 60px;
@@ -142,8 +147,96 @@ width: 200px;
   text-decoration: none;
 }
 
+/* Social Links */
+.bottom-container {
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
+}
+
+.footer-link {
+  font-size: 30px;
+  color: #231e23;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #EAF6F6;
+}
+
+/* copyright button */
 .copyright {
-  color:#EAF6F6;
-  font-size: 0.75rem;
+  color: #EAF6F6;
+  font-size: 1rem;
   padding-top: 4px;
 }
+
+
+
+/*----------------------------------------------- Media Query (Responsivness) */
+@media (max-width:1000px) {
+
+  /* navbar */
+  .nav-item {
+    font-size: 40px;
+    font-weight: normal;
+    padding: 10px 30px ;
+    margin-top: 50px;
+  }
+
+  /* intro */
+  h1 {
+    font-size: 100px;
+  }
+
+  .profile h2 {
+    font-size: 80px;
+    font-weight: bold;
+  }
+
+  .profile p {
+    font-size: 30px;
+    font-weight: bolder;
+    margin: auto;
+    width: 80%;
+    line-height: 2;
+  }
+
+  /* skills @media query */
+  .skills h2 {
+    font-size: 80px;
+    font-weight: bold;
+  }
+
+  .skills-heading {
+    font-size: 40px;
+  }
+
+.skills-text{
+    font-size: 30px;
+    width: 100%;
+
+  }
+  table{
+    font-size: 30px;
+    width:80%;
+  }
+.computer,.languages{
+  width:30%;
+}
+
+  /* bottom container */
+  .contact-me h2 h3 {
+    font-size: 40px;
+  }
+
+  .contact-me p{
+  font-size: 15px;
+    width: 90%;
+
+  }
+
+
+
+}
+  /* -------------------------------------media query end */
