@@ -39,26 +39,44 @@ hr {
 }
 
 /* Navgation bar */
-.navbar {
-  background-color: #EAF6F6;
-}
-
-.nav-item {
+li ,a {
+  font-weight: 500 bold;
+  font-size: 20px;
   text-decoration: none;
   color: #66BFBF;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 20px 30px;
+}
+header {
+  display: flex;
+  justify-content:center;
+  padding: 10px 10%; 
 }
 
-.nav-item:hover {
-  color: black;
+.nav__links {
+
+  list-style: none;
+
 }
+.nav__links li{
+  display: inline-block;
+  padding: 0px 40px;
+}
+
+
+
+.nav__links li a{
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color:#F9CEEE;
+}
+/* hamburger */
 
 
 /* Page 1 */
 .top-container {
-  background-color: #EAF6F6;
+  background: color #b1d0e0;;
+  /* #EAF6F6 */
   margin: 0;
   position: relative;
   padding-top: 250px;
@@ -114,11 +132,37 @@ hr {
   bottom: 300px;
 }
 
+/* Projects */
+
+.project-card{
+  width: 300px;
+  height:500px;
+  box-shadow: 5px 5px 20px rgb(156, 155, 155);
+ margin: 10px;
+}
+.project-container{
+  display: flex;
+  justify-content: space-around;
+}
+.project-img{
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  border-radius: 200px;
+
+}
+.project-link:hover{
+  color: coral;
+
+}
+
 /* CONTACT ME */
 .contact-message {
   width: 40%;
+  font-weight: bold;
   margin: 40px auto 60px;
 }
+
 
 .btn {
   background: #11cdd4;
@@ -177,7 +221,7 @@ hr {
 @media (max-width:1000px) {
 
   /* navbar */
-  .nav-item {
+  .nav__links {
     font-size: 40px;
     font-weight: normal;
     padding: 10px 30px ;
@@ -235,7 +279,12 @@ hr {
     width: 90%;
 
   }
+.project-container{
+  display: flex;
+  flex-wrap: wrap;
 
+
+}
 
 
 }
